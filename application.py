@@ -11,7 +11,7 @@ cors = CORS(application, resources={r"/*": {"origins": "*"}})
 
 @application.route('/')
 def main():
-    return "핵심 쏙쏙 AWS"
+    return render_template('index.html')
 
 
 @application.route('/fileupload', methods=['POST'])
